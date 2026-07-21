@@ -1,0 +1,35 @@
+[
+  {
+    "id": "drone",
+    "title": "ارتوفتوی پهپادی",
+    "url": "tiles/drone/{z}/{x}/{y}.png",
+    "maxZoom": 22,
+    "maxNativeZoom": 21,
+    "tms": false,
+    "attribution": "برداشت پهپادی",
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "id": "satellite",
+    "title": "تصاویر ماهواره‌ای",
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "maxZoom": 22,
+    "maxNativeZoom": 17,
+    "tms": false,
+    "attribution": "Esri World Imagery",
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "id": "osm",
+    "title": "OpenStreetMap",
+    "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "maxZoom": 22,
+    "maxNativeZoom": 19,
+    "tms": false,
+    "attribution": "&copy; OpenStreetMap contributors",
+    "visible": false,
+    "opacity": 1
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "arse",
+    "title": "عرصه",
+    "file": "arse.geojson",
+    "geometryType": "polygon",
+    "color": "#2FA4FF",
+    "fillOpacity": 0.25,
+    "weight": 2,
+    "labelField": "name",
+    "visible": true
+  },
+  {
+    "id": "roads",
+    "title": "معابر",
+    "file": "roads.geojson",
+    "geometryType": "line",
+    "color": "#F9A825",
+    "weight": 4,
+    "labelField": "name",
+    "visible": true
+  },
+  {
+    "id": "survey_points",
+    "title": "نقاط برداشت",
+    "file": "points.geojson",
+    "geometryType": "point",
+    "color": "#D32F2F",
+    "radius": 6,
+    "labelField": "name",
+    "visible": true
+  },
+  {
+    "id": "new",
+    "title": "محدوده ها",
+    "file": "new.geojson",
+    "geometryType": "polygon",
+    "color": "#F9A825",
+    "weight": 2,
+    "labelField": "Name",
+    "visible": true
+  }
+]

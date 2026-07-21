@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "خیابان نمونه", "نوع_روسازی": "آسفالت", "عرض_متر": 12 },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [57.9695, 35.2620],
+          [57.9715, 35.2610],
+          [57.9740, 35.2595],
+          [57.9755, 35.2580]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "نقطه برداشت ۱", "توضیحات": "گوشه ملک", "تاریخ": "1405/04/29" },
+      "geometry": { "type": "Point", "coordinates": [57.9713, 35.2611] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "نقطه برداشت ۲", "توضیحات": "ورودی اصلی", "تاریخ": "1405/04/29" },
+      "geometry": { "type": "Point", "coordinates": [57.9730, 35.2596] }
+    }
+  ]
+}

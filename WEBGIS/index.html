@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>سامانه برداشت میدانی</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Top bar: brand + status chips -->
+<div class="topbar">
+  <div class="brand">
+    <span class="dot" id="onlineDot"></span>
+    <span id="brandTitle">سامانه برداشت میدانی</span>
+  </div>
+  <div class="status-chips">
+    <div class="chip"><span class="spinner" id="tileSpinner"></span><span>Tile</span></div>
+    <div class="chip" id="tileErrorChip" style="display:none;cursor:pointer;color:#D32F2F;"><span>⚠️</span><span id="tileErrorCount">0</span></div>
+    <div class="chip"><span class="gps-quality" id="gpsQualityDot"></span><span id="gpsAccuracyText">GPS</span></div>
+  </div>
+</div>
+
+<!-- Measurement info badge -->
+<div class="measure-badge" id="measureBadge"></div>
+
+<!-- Floating action buttons -->
+<div class="fab-stack">
+  <button class="fab" id="btnMeasure" title="اندازه‌گیری">📏</button>
+  <button class="fab" id="btnLocate" title="موقعیت من">📍</button>
+  <button class="fab primary" id="btnLayers" title="لایه‌ها">☰</button>
+</div>
+
+<!-- Bottom status bar: coordinates + zoom -->
+<div class="statusbar">
+  <div class="coords">
+    <span id="coordLatLon">Lat: — , Lon: —</span>
+    <span class="utm" id="coordUtm">UTM 40N: —</span>
+  </div>
+  <div class="zoom" id="zoomLevel">Z 15</div>
+  <button class="copy" id="btnCopyCoords">کپی مختصات</button>
+</div>
+
+<!-- Scrim + Layers bottom sheet -->
+<div class="overlay-scrim" id="scrim"></div>
+<div class="layers-panel" id="layersPanel">
+  <div class="handle"></div>
+  <div class="panel-header">
+    <h2>لایه‌ها</h2>
+    <button id="btnClosePanel">✕</button>
+  </div>
+  <div class="panel-body" id="panelBody">
+    <!-- filled by JS -->
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@2.17.0/dist/leaflet-geoman.min.js"></script>
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+<script src="https://unpkg.com/sortablejs@1.15.0/Sortable.min.js"></script>
+<script src="https://unpkg.com/proj4@2.9.0/dist/proj4.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

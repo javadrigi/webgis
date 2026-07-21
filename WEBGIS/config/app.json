@@ -1,0 +1,9 @@
+{
+  "title": "سامانه برداشت میدانی بردسکن",
+  "primaryColor": "#162437",
+  "accentColor": "#2FA4FF",
+  "mapCenter": [35.260489, 57.971597],
+  "defaultZoom": 14,
+  "utmZone": 40,
+  "utmHemisphere": "N"
+}
